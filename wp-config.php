@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
-
-/** MySQL database username */
-define('DB_USER', 'username_here');
-
-/** MySQL database password */
-define('DB_PASSWORD', 'password_here');
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+if (isset($_ENV["DATABASE_URL"])) {
+  $db = parse_url($_ENV["DATABASE_URL"]);
+  define(‘DB_NAME’, trim($db["path"],”/”));
+  define(‘DB_USER’, $db["user"]);
+  define(‘DB_PASSWORD’, $db["pass"]);
+  define(‘DB_HOST’, $db["host"]);
+}
+else {
+  die(“Your heroku DATABASE_URL does not appear to be correctly? \n”);
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,15 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
-
+define('AUTH_KEY',         ';xu|*j$t?IiAPR$! ^I=zD9L+}#ha?hx.@FzA:[b-7?@+RtC;<,V7uN4+#C@38G}');
+define('SECURE_AUTH_KEY',  'Pbx[}[#n;:,#& lyy=;&RXq4r!_IomCGTV5En+3bDL?ody`i@MCS0$Z+hK^r:]P)');
+define('LOGGED_IN_KEY',    '6H)N|?UaZcQ6&}o*|!i h^Rpps}Vw>a%E{0h(1D(-mTHM7eA 8sKI/k;1 !3+R_Q');
+define('NONCE_KEY',        'W.8FH8-S+yud3JIz!c.wH}~D?1J93(lmst0UX^^Nlz t|%02UPd||-OY&miSet-W');
+define('AUTH_SALT',        'fk/Q0F)EkEpC:_#QI7JUIJiMIEz+^~Kf^XAOjOVMn5ysR<}%=[[[@0xmF ]2j|V`');
+define('SECURE_AUTH_SALT', 'F6zg+!DLuKL:!0ZYKFE*kCk|BM3{Xhm,R6TQBw94ZY=u&Klz^lyIs+D&Cc@09*=I');
+define('LOGGED_IN_SALT',   '}7O+5AeyQ-^DK1Z*# ->UuQoY:jq8oPC8PGM0:DRNY62=.(<;*8ZoW}H`)+-o~f`');
+define('NONCE_SALT',       '##M=Rd8!x4n|($S)&rq7XLGTxt?f=V>/2h[:?K$!J8>n_/1BxUuv-N2DH<d0E=L|');
 /**#@-*/
 
 /**
