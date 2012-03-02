@@ -591,4 +591,4 @@ function twentyeleven_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
-
+remove_filter('template_redirect','redirect_canonical');

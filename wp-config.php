@@ -16,15 +16,15 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-if (isset($_ENV["DATABASE_URL"])) {
-  $db = parse_url($_ENV["DATABASE_URL"]);
+if (isset($_SERVER["DATABASE_URL"])) {
+  $db = parse_url($_SERVER["DATABASE_URL"]);
   define("DB_NAME", trim($db["path"],"/"));
   define("DB_USER", $db["user"]);
   define("DB_PASSWORD", $db["pass"]);
   define("DB_HOST", $db["host"]);
 }
 else {
-  die("Your heroku DATABASE_URL does not appear to be correctly? \n");
+  die("Your DATABASE_URL does not appear to be correctly specified.");
 }
 
 /** Database Charset to use in creating database tables. */
@@ -51,6 +51,8 @@ define("SECURE_AUTH_SALT", "F6zg+!DLuKL:!0ZYKFE*kCk|BM3{Xhm,R6TQBw94ZY=u&Klz^lyI
 define("LOGGED_IN_SALT",   "}7O+5AeyQ-^DK1Z*# ->UuQoY:jq8oPC8PGM0:DRNY62=.(<;*8ZoW}H`)+-o~f`");
 define("NONCE_SALT",       "##M=Rd8!x4n|($S)&rq7XLGTxt?f=V>/2h[:?K$!J8>n_/1BxUuv-N2DH<d0E=L|");
 /**#@-*/
+
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME']);
 
 /**
  * WordPress Database Table prefix.
