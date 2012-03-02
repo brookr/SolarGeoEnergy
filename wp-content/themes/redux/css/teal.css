@@ -52,5 +52,7 @@ body {
 
 p.caption { text-align: left; }
 dl dt { font-weight:bold; }
-#header { height: 167px; }
+#header { height: 188px; }
+#header-inner { padding-top: 0px;}
 #logo { position: absolute; left: 0; top: 7;}
+

@@ -80,7 +80,7 @@ define("WPLANG", "");
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define("WP_DEBUG", strpos($_SERVER['SERVER_NAME'], ".dev"));
+define("WP_DEBUG", false);
 
 /* That"s all, stop editing! Happy blogging. */
 
