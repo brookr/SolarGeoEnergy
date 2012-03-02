@@ -45,3 +45,12 @@ body {
 	border-top: 1px solid #3f817c;
 	background: url(../images/header_bg_teal.jpg) repeat-y center top #2b5956;
 }
+
+/*==========================================================================================
+	3.	My Customizations
+==========================================================================================*/
+
+p.caption { text-align: left; }
+dl dt { font-weight:bold; }
+#header { height: 167px; }
+#logo { position: absolute; left: 0; top: 7;}
