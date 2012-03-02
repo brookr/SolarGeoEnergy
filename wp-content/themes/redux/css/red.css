@@ -1,0 +1,47 @@
+/*==========================================================================================
+	
+Red CSS File
+This file contains styles related to the colour scheme of the theme
+
+==========================================================================================
+
+	1.	Link Colours
+	2.	Header Colours
+
+==========================================================================================*/
+
+
+/*==========================================================================================
+	1.	Link Colours
+==========================================================================================*/
+
+#logo a:hover { color: #006699; }
+
+.tour .callout_box li a:hover,
+.tour .callout_box li.ui-state-active a,
+.tz_tweet_widget span a,
+#sidebar a:hover,
+.comment-meta a:hover,
+.entry-title a:hover,
+a { color: #5e201e; }
+
+.tab-tags a:hover {
+	color: #ffffff !important; 
+	background: #5e201e;
+}
+
+.page-tagline,
+#slider h3 {color: #f0bab8; }
+
+/*==========================================================================================
+	2.	Header Colours
+==========================================================================================*/
+
+body {
+	border-top: 7px solid #1c1c1c;
+}
+
+#header {
+	border-top: 1px solid #893f3c;
+	background: url(../images/header_bg_red.jpg) repeat-y center top #5e201e;
+}

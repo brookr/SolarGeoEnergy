@@ -1,0 +1,42 @@
+.tz-subscribe button.inside{
+	padding:0;
+}
+
+.input_bg input{
+	width:65%;
+}
+
+#global-tagline {
+	width: 400px;
+}
+
+.page-template-template-full-width-php table {
+	width: 940px;
+}
+.tour .callout_box li a span {
+    margin: -25px 0 0 -20px;
+}
+
+button.alt_btn span.right { width: 130px; }
+
+#circles ul{
+	margin: 32px auto 0px;
+}
+
+.alert.white{
+	background:url(../../images/alert_white_bg.gif) repeat;
+}
+
+.alert.red{
+	background:url(../../images/alert_red_bg.gif) repeat;
+}
+
+.alert.orange{
+	background:url(../../images/alert_orange_bg.gif) repeat;
+}
+
+.alert.green{
+	background:url(../../images/alert_green_bg.gif) repeat;
+}
+
+

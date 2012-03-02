@@ -1,0 +1,47 @@
+/*==========================================================================================
+	
+Dark CSS File
+This file contains styles related to the colour scheme of the theme
+
+==========================================================================================
+
+	1.	Link Colours
+	2.	Header Colours
+
+==========================================================================================*/
+
+
+/*==========================================================================================
+	1.	Link Colours
+==========================================================================================*/
+
+#logo a:hover { color: #006699; }
+
+.tour .callout_box li a:hover,
+.tour .callout_box li.ui-state-active a,
+.tz_tweet_widget span a,
+#sidebar a:hover,
+.comment-meta a:hover,
+.entry-title a:hover,
+a { color: #252525; }
+
+.tab-tags a:hover {
+	color: #ffffff !important; 
+	background: #252525;
+}
+
+.page-tagline,
+#slider h3 {color: #c2bdad; }
+
+/*==========================================================================================
+	2.	Header Colours
+==========================================================================================*/
+
+body {
+	border-top: 7px solid #1c1c1c;
+}
+
+#header {
+	border-top: 1px solid #3d3d3d;
+	background: url(../images/header_bg_dark.jpg) repeat-y center top #252525;
+}

@@ -1,0 +1,91 @@
+*** Redux Changelog ***
+
+13 Dec 2011 - Version 1.1.3
+	
+	* functions.php - updated validation code being used.
+	* theme-portfoliofields.php – fixed video setting appearing in sidebar for WP 3.3
+	* theme-shortcodes.php – fixed toggle shortcode to allow for open/closed state attribute
+	* jquery.custom.js – updated toggle script
+	* style.css 
+		– updated toggle styles to work with new toggle code
+		– fixed grey box bug for portfolio templates
+		– updated version number
+	* single-related – changed caller_get_posts to ignore_sticky_posts
+	* widget-blog.php – changed caller_get_posts to ignore_sticky_posts
+	* widget-rsstwitter.php – fixed Twitter follower count
+	* widget-twitter.php – allow for multiple instances
+	* widget-tabbed.php - enqueue fix
+	
+	ADDED:
+	* twitter.js
+
+11 Oct 2011 - Version 1.1.2
+	* style.css - Fixed margin on .callout_box.table.small a.buttons
+				- Fixed menu display in IE
+	* comments.php - Fixed typo
+	* theme-posttypes.php - Moved rewrite slug for slides from labels to args
+	* header.php - Added meta tag to fix iPad display
+
+19 Sept 2011 - Version 1.1.1
+
+	* template-contact.php - Fixed bug
+	* style.css - Version number change		
+	* template-portfolio.php - Fixed filtering bug
+	* template-portfolio-two-columns.php - Fixed filtering bug
+	* template-portfolio-three-columns.php - Fixed filtering bug
+	* js/jquery.custom.js - Fixed filtering bug
+
+15 Aug 2011 - Version 1.1
+	
+	* admin/admin-interface.php - Updated HTML
+	* admin/admin-styles.css - Updated styling
+	
+	* functions/theme-functions.php - Removed obsolete functions
+	* functions/theme-customfields.php - Minor bug fixes
+	* functions/theme-shortcodes.php - Minor bug fixes
+	* functions/theme-posttypes.php - Minor bug fixes
+	* functions/widget-flickr.php - Added type attribute
+	* functions/widget-video.php - Added type attribute
+	* functions/widget-tweets.php - New code
+	* functions/widget-blog.php - Added type attribute
+	* css/dark.css - Changed image path
+	* css/default.css - Changed image path
+	* css/green.css - Changed image path
+	* css/lightblue.css - Changed image path
+	* css/natural.css - Changed image path
+	* css/orange.css - Changed image path
+	* css/red.css - Changed image path
+	* css/teal.css - Changed image path
+	
+	* functions.php - Updated file paths, removed obsolete image sizes
+	* template-portfolio.php - Skill types now support any characters
+	* template-portfolio-two-columns.php - Skill types now support any characters
+	* template-portfolio-three-columns.php - Skill types now support any characters
+	* style.css - Added gallery styling
+	* template-contact.php - Bug fixes
+	
+	* MOVED admin/theme-functions.php to functions/ directory
+	* MOVED admin/theme-options.php to functions/ directory
+	
+	* REMOVED images/header_bg_dark.gif
+	* REMOVED images/header_bg_default.gif
+	* REMOVED images/header_bg_green.gif
+	* REMOVED images/header_bg_lightbluek.gif
+	* REMOVED images/header_bg_nature.gif
+	* REMOVED images/header_bg_orange.gif
+	* REMOVED images/header_bg_red.gif
+	* REMOVED images/header_bg_teal.gif
+	
+	* ADDED images/header_bg_dark.jpg
+	* ADDED images/header_bg_default.jpg
+	* ADDED images/header_bg_green.jpg
+	* ADDED images/header_bg_lightbluek.jpg
+	* ADDED images/header_bg_nature.jpg
+	* ADDED images/header_bg_orange.jpg
+	* ADDED images/header_bg_red.jpg
+	* ADDED images/header_bg_teal.jpg
+	
+	
+20 Feb 2011 - Version 1.0
+
+	* First Release
