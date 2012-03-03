@@ -50,7 +50,8 @@ if(isset($_POST['submitted'])) {
 			$body .= "Comments: $comments";
 			$headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
 			
-			mail($emailTo, $subject, $body, $headers);
+			$emailSent = mail($emailTo, $subject, $body, $headers);
+			die("Email sent? " . $emailSent);
 			$emailSent = true;
 		}
 	
