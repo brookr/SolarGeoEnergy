@@ -51,7 +51,6 @@ if(isset($_POST['submitted'])) {
 			$headers = 'From: '.$name.' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
 			
 			$emailSent = mail($emailTo, $subject, $body, $headers);
-			die("Email sent? " . $emailSent);
 			$emailSent = true;
 		}
 	
