@@ -1,3 +1,8 @@
+.rvmrc
+.bundle
+Gemfile*
+bin/
+db/
 .powenv
 .DS_Store
 config.ru
