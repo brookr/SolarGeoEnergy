@@ -7,3 +7,8 @@ db/
 .DS_Store
 config.ru
 tmp/
+
+wp-content/advanced-cache.php
+wp-content/cache/1.html
+wp-content/cache/2.html
+wp-content/cache/supercache/
